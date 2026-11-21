@@ -160,7 +160,7 @@ const socialLinks = [
 	{ href: 'https://www.youtube.com/@PORT14-k8w', text: 'YouTube' },
 	{ href: 'https://music.apple.com/jp/artist/port-14/1769986386', text: 'Apple Music' },
 	{ href: 'https://music.youtube.com/@PORT14-k8w', text: 'YouTube Music' },
-	{ href: 'https://open.spotify.com/intl-ja/artist/1mec8Pc216744Rl0fyVDZR?si=8HWJTuTURJSXqoFytHpoLg', text: 'Spotify' },
+	{ href: 'https://open.spotify.com/intl-ja/artist/1mec8Pc216744Rl0fyVDZR', text: 'Spotify' },
 	{ href: 'https://x.com/port14_0', text: 'X' },
 	{ href: 'https://port14.booth.pm/', text: 'BOOTH' },
 	{ href: 'https://narasu.jp/client/static/artists/18567', text: 'Other streaming services' }
