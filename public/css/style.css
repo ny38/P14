@@ -4,6 +4,7 @@
 	--text-color: #e5e7eb;
 	--text-color-secondary: #ffffff99;
 	--background-color: #0f0f0f;
+	--box-color: #212121;
 	--border-color: #5e5e5e;
 }
 
@@ -103,6 +104,23 @@ div.content {
 	margin-left: auto;
 }
 
+.pk {
+	font-size: 1.5rem;
+	text-align: left;
+	letter-spacing: .1em;
+	max-width: 800px;
+	margin: 10px auto 0 auto;
+}
+
+.pk span {
+	padding: 0 10px;
+}
+
+.pk a {
+	color: #60a5fa;
+	font-weight: normal;
+}
+
 #top {
 	color: var(--text-color);
 	font-size: 1.4rem;
@@ -149,6 +167,18 @@ div.content {
 	top: -1px;
 }
 
+.box {
+	width: 100%;
+	background-color: var(--box-color);
+	text-align: left;
+	border-radius: 4px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 20px;
+}
+
 footer {
 	padding: 20px 20px;
 }
@@ -156,4 +186,10 @@ footer {
 footer small {
 	font-size: 1.2rem;
 	letter-spacing: .1em;
+}
+
+@media (min-width: 768px) {
+	.box {
+		padding: 30px;
+	}
 }

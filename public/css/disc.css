@@ -40,44 +40,6 @@ header {
 	position: relative;
 }
 
-ul.link {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 10px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
-}
-
-ul.link li {
-	list-style: none;
-	margin-bottom: 10px;
-	margin-right: 20px;
-}
-
-ul.link li:last-child {
-	margin-right: 0;
-}
-
-.pk {
-	font-size: 1.5rem;
-	text-align: left;
-	letter-spacing: .1em;
-	max-width: 800px;
-	margin: 10px auto 0 auto;
-}
-
-.pk span {
-	padding: 0 10px;
-}
-
-.pk a {
-	color: #60a5fa;
-	font-weight: normal;
-}
-
 div.content.disc {
 	margin-top: 40px;
 }
@@ -117,6 +79,12 @@ div.content.disc .disc_inner .info li a[href=""] {
 	display: none;
 }
 
+div.content.disc .disc_inner .info li a[href*="lyrics.html"] {
+	color: var(--text-color);
+	font-weight: normal;
+	display: none;
+}
+
 div.content.disc .disc_inner .info ul.details li {
 	font-size: 1.4rem;
 	border-bottom: none;
@@ -129,7 +97,6 @@ div.content.disc .disc_inner .info ul.details li {
 }
 
 @media (min-width: 768px) {
-
 	h2 {
 		font-size: 3.2rem;
 	}

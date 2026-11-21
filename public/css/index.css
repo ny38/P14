@@ -37,18 +37,6 @@ header {
 	position: relative;
 }
 
-ul.link {
-	width: 100%;
-	background-color: #212121;
-	text-align: left;
-	border-radius: 4px;
-	padding: 20px;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 20px;
-}
-
 ul.link li {
 	list-style: none;
 	letter-spacing: .1em;
@@ -99,6 +87,52 @@ a.nr_streaming.external_links[href=""] {
 div.content.nr .info li {
 	text-align: left;
 	margin-bottom: 10px;
+}
+
+.nr_countdown.none {
+	display: none;
+}
+
+.nr_countdown {
+	margin-top: 20px;
+	text-align: left;
+}
+
+.countdown_label {
+	margin-bottom: 8px;
+	font-weight: bold;
+	letter-spacing: .1em;
+}
+
+.countdown_units {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(55px, 1fr));
+	gap: 8px;
+}
+
+.countdown_units div {
+	min-width: 0;
+	text-align: center;
+	background-color: var(--box-color);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	padding: 10px 4px 8px;
+}
+
+.countdown_units strong,
+.countdown_units span {
+	display: block;
+}
+
+.countdown_units strong {
+	font-size: 2.4rem;
+	line-height: 1;
+}
+
+.countdown_units span {
+	margin-top: 6px;
+	color: var(--text-color-secondary);
+	font-size: 1.2rem;
 }
 
 div.content.disc .disc_wrap {
@@ -158,6 +192,7 @@ a.button:hover {
 
 .member {
 	text-align: left;
+	padding-top: 40px;
 }
 
 .p14 h3,
@@ -208,8 +243,58 @@ ul.link li:last-child {
 	margin-bottom: 0;
 }
 
-@media (min-width: 768px) {
+.roadmap .ja.none,
+.roadmap .en.none {
+	display: none;
+}
 
+.roadmap_language {
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+	margin-top: 20px;
+}
+
+.roadmap_language_button {
+	color: var(--text-color);
+	background-color: transparent;
+	border: 1px solid var(--border-color);
+	border-radius: 20px;
+	padding: 6px 16px;
+	cursor: pointer;
+}
+
+.roadmap_language_button.active {
+	color: #0f0f0f;
+	background-color: var(--text-color);
+	border-color: var(--text-color);
+}
+
+.roadmap li {
+	list-style: disc;
+	list-style-position: outside;
+	margin-left: 1.5em;
+	padding-left: .25em;
+	margin-bottom: 30px;
+}
+
+.roadmap li:last-child {
+	margin-bottom: 0;
+}
+
+.contact p {
+	text-align: left;
+}
+
+.contact_note {
+	padding-top: 40px;
+}
+
+nav {
+	display: none;
+}
+
+@media (min-width: 768px) {
 	header {
 		height: 100vh;
 		background-attachment: fixed;
@@ -228,14 +313,14 @@ ul.link li:last-child {
 		background-size: contain;
 		background-position: center;
 		position: absolute;
-		bottom: 10%;
+		bottom: 5%;
 		left: 50%;
 		transform: translateX(-50%);
 		cursor: pointer;
 	}
 
 	#header_button:hover {
-		bottom: 9%;
+		bottom: 4%;
 	}
 
 	h1 {
@@ -272,11 +357,6 @@ ul.link li:last-child {
 		width: 22%;
 	}
 
-	ul.link {
-		max-width: 400px;
-		padding: 30px;
-	}
-
 	.member {
 		text-align: center;
 	}
@@ -291,5 +371,57 @@ ul.link li:last-child {
 
 	.p14 p {
 		text-align: center;
+	}
+
+	.sns.box {
+		max-width: 460px;
+	}
+}
+
+@media (min-width: 1350px) {
+	nav {
+		display: block;
+		position: fixed;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		z-index: 8;
+	}
+
+	nav.visible {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	nav ul {
+		border-left: 1px solid var(--border-color);
+		padding-left: 16px;
+	}
+
+	nav li {
+		margin-bottom: 18px;
+	}
+
+	nav li:last-child {
+		margin-bottom: 0;
+	}
+
+	nav a {
+		display: block;
+		text-align: left;
+		color: var(--text-color-secondary);
+		font-size: 1.4rem;
+		text-decoration: none;
+		letter-spacing: .05em;
+	}
+
+	nav a:hover,
+	nav a:focus-visible {
+		color: var(--text-color);
+		text-decoration: underline;
 	}
 }
