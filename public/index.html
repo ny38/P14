@@ -14,8 +14,8 @@
 	<meta property="og:image:alt" content="PORT 14プロフィール写真">
 	<meta name="twitter:card" content="summary">
 	<link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="any">
-	<link rel="stylesheet" href="./css/style.css?261121">
-	<link rel="stylesheet" href="./css/index.css?261121">
+	<link rel="stylesheet" href="./css/style.css?261122">
+	<link rel="stylesheet" href="./css/index.css?261122">
 </head>
 
 <body>
@@ -42,20 +42,19 @@
 				<h3 class="video_title"></h3>
 			</div>
 		</div>
-		<div class="content nr">
+		<div class="content nr" id="new_release">
 			<h2>NEW RELEASE</h2>
 			<div class="nr_wrap"></div>
 		</div>
-		<div class="content disc">
+		<div class="content disc" id="discography">
 			<h2>DISCOGRAPHY</h2>
 			<div class="disc_wrap"></div>
 			<a href="disc.html" class="button">View Discography</a>
 		</div>
-		<div class="content about">
+		<div class="content about" id="about">
 			<h2>ABOUT</h2>
 			<div>
 				<div class="p14">
-					<img src="" alt="">
 					<div>
 						<div class="photo">
 							<img src="./img/port14.jpg"
@@ -63,7 +62,7 @@
 						</div>
 						<h3>PORT 14</h3>
 						<p>A music project based in Japan. Launched in 2024.</p>
-						<ul class="link sns"></ul>
+						<ul class="link sns box"></ul>
 					</div>
 				</div>
 				<div class="member">
@@ -75,22 +74,58 @@
 				</div>
 			</div>
 		</div>
-		<div class="content contact">
+		<div class="content roadmap" id="roadmap">
+			<h2>FUTURE ROADMAP</h2>
+			<div class="roadmap_wrap">
+				<div class="roadmap_language" aria-label="Roadmap language">
+					<button type="button" class="roadmap_language_button ja active" aria-pressed="true">Japanese</button>
+					<button type="button" class="roadmap_language_button en" aria-pressed="false">English</button>
+				</div>
+				<ul class="box ja">
+					<li>デジタルシングル"Leave Me Behind"リリース。 (2026-11-30)</li>
+					<li>新しいデジタルシングルリリース。 (2026)</li>
+					<li>複数の新規楽曲の制作。 (進行中)</li>
+					<li>1stアルバム制作。 (予定)</li>
+				</ul>
+				<ul class="box en none">
+					<li>Digital single “Leave Me Behind” released. (November 30, 2026)</li>
+					<li>New digital single released. (2026)</li>
+					<li>Production of several new songs. (In progress)</li>
+					<li>Production of 1st album. (Planned)</li>
+				</ul>
+			</div>
+		</div>
+		<div class="content contact" id="contact">
 			<h2>CONTACT</h2>
-			<div>
-				<p>Please contact us <a href="https://docs.google.com/forms/d/e/1FAIpQLScoqzOdJlYWAtMme2WfBpZsxCXcXJQadIFaMFRtM02LJUyWqA/viewform" target="_blank">here</a>.<br>(You will be redirected to a Google Form.)</p>
-				<p>お問い合わせは<a href="https://docs.google.com/forms/d/e/1FAIpQLScoqzOdJlYWAtMme2WfBpZsxCXcXJQadIFaMFRtM02LJUyWqA/viewform" target="_blank">こちら</a>からお願いします。<br>（Google フォームへ遷移します。）</p>
+			<div class="box">
+				<p>お問い合わせは<a href="https://docs.google.com/forms/d/e/1FAIpQLScoqzOdJlYWAtMme2WfBpZsxCXcXJQadIFaMFRtM02LJUyWqA/viewform" target="_blank">こちら</a>からお願いします。（Google フォームへ遷移します。）</p>
+				<p>Please contact us <a href="https://docs.google.com/forms/d/e/1FAIpQLScoqzOdJlYWAtMme2WfBpZsxCXcXJQadIFaMFRtM02LJUyWqA/viewform" target="_blank">here</a>. (You will be redirected to a Google Form.)</p>
+				<div class="contact_note">
+					<p>楽曲に関するメッセージ、感想等も募集しています。</p>
+					<p>We are also accepting messages and feedback regarding the songs.</p>
+				</div>
 			</div>
 		</div>
 	</section>
+	<nav>
+		<ul>
+			<li><a href="#top">TOP</a></li>
+			<li><a href="#section_top">VIDEO</a></li>
+			<li><a href="#new_release">NEW RELEASE</a></li>
+			<li><a href="#discography">DISCOGRAPHY</a></li>
+			<li><a href="#about">ABOUT</a></li>
+			<li><a href="#roadmap">FUTURE ROADMAP</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+	</nav>
 	<div id="top">
 		<span></span>
 	</div>
 	<footer>
 		<small>&copy; 2026 PORT 14</small>
 	</footer>
-	<script src="./js/main.js?261121"></script>
-	<script src="./js/index.js?261121"></script>
+	<script src="./js/main.js?261122"></script>
+	<script src="./js/index.js?261122"></script>
 </body>
 
 </html>
