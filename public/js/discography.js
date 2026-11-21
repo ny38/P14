@@ -164,7 +164,7 @@ const discography = [
 	}
 ];
 
-const discWrap = document.querySelector('.content.disc .disc_wrap_single');
+const discWrap = document.querySelector('.content.disc .disc_wrap');
 
 if (!discWrap) {
 	throw new Error('disc_wrapが見つかりません。');
@@ -220,6 +220,13 @@ discography.forEach(function (release) {
 	streamingItem.appendChild(streaming);
 
 	list.append(type, dateItem, youtubeItem, streamingItem);
+
+	const lyricsItem = document.createElement('li');
+	const lyricsLink = document.createElement('a');
+	lyricsLink.href = `lyrics.html#${release.id}`;
+	lyricsLink.textContent = 'Lyrics';
+	lyricsItem.appendChild(lyricsLink);
+	list.appendChild(lyricsItem);
 
 	const details = document.createElement('ul');
 	details.className = 'details';
