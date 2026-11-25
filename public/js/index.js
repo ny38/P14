@@ -281,7 +281,7 @@ const sideNavigation = document.querySelector('nav');
 
 function toggleSideNavigation() {
 	const videoTop = sectionTop.getBoundingClientRect().top;
-	sideNavigation.classList.toggle('visible', videoTop <= window.innerHeight * 0.2);
+	sideNavigation.classList.toggle('visible', videoTop <= window.innerHeight * 0.9);
 }
 
 window.addEventListener('scroll', toggleSideNavigation);
@@ -290,7 +290,7 @@ toggleSideNavigation();
 // 固定ナビゲーションの表示を設定 End
 
 // ナビゲーションのスムーズスクロールを設定
-const navigationLinks = sideNavigation.querySelectorAll('a');
+const navigationLinks = sideNavigation.querySelectorAll('ul.nav a');
 
 navigationLinks.forEach(function (link) {
 	link.addEventListener('click', function (event) {
