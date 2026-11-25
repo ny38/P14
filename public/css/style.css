@@ -3,6 +3,7 @@
 :root {
 	--text-color: #e5e7eb;
 	--text-color-secondary: #ffffff99;
+	--link-color: #60A5FA;
 	--background-color: #0f0f0f;
 	--box-color: #212121;
 	--border-color: #5e5e5e;
@@ -80,7 +81,7 @@ h4 {
 }
 
 a {
-	color: #60A5FA;
+	color: var(--link-color);
 	text-decoration: underline;
 	font-weight: bold;
 }
@@ -117,7 +118,7 @@ div.content {
 }
 
 .pk a {
-	color: #60a5fa;
+	color: var(--link-color);
 	font-weight: normal;
 }
 
@@ -159,6 +160,21 @@ div.content {
 	height: 18px;
 	margin-left: 5px;
 	background-image: url("../img/svg/open_in_new.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+	position: relative;
+	top: -1px;
+}
+
+.external_links_w::after {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-left: 5px;
+	background-image: url("../img/svg/open_in_new_w.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;

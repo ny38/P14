@@ -381,6 +381,8 @@ nav {
 @media (min-width: 1350px) {
 	nav {
 		display: block;
+		border-left: 1px solid var(--border-color);
+		padding-left: 16px;
 		position: fixed;
 		top: 50%;
 		right: 20px;
@@ -397,13 +399,8 @@ nav {
 		pointer-events: auto;
 	}
 
-	nav ul {
-		border-left: 1px solid var(--border-color);
-		padding-left: 16px;
-	}
-
 	nav li {
-		margin-bottom: 18px;
+		margin-bottom: 20px;
 	}
 
 	nav li:last-child {
@@ -413,7 +410,7 @@ nav {
 	nav a {
 		display: block;
 		text-align: left;
-		color: var(--text-color-secondary);
+		color: var(--text-color);
 		font-size: 1.4rem;
 		text-decoration: none;
 		letter-spacing: .05em;
@@ -421,7 +418,16 @@ nav {
 
 	nav a:hover,
 	nav a:focus-visible {
-		color: var(--text-color);
 		text-decoration: underline;
 	}
+
+	nav ul.nav_link {
+		border-top: 1px solid var(--border-color);
+		padding-top: 20px;
+		margin-top: 20px;
+	}
+
+	/* nav ul.nav_link a {
+		color: var(--link-color);
+	} */
 }
