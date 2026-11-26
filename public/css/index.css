@@ -290,10 +290,6 @@ ul.link li:last-child {
 	padding-top: 40px;
 }
 
-nav {
-	display: none;
-}
-
 @media (min-width: 768px) {
 	header {
 		height: 100vh;
@@ -376,58 +372,4 @@ nav {
 	.sns.box {
 		max-width: 460px;
 	}
-}
-
-@media (min-width: 1350px) {
-	nav {
-		display: block;
-		border-left: 1px solid var(--border-color);
-		padding-left: 16px;
-		position: fixed;
-		top: 50%;
-		right: 20px;
-		transform: translateY(-50%);
-		opacity: 0;
-		visibility: hidden;
-		pointer-events: none;
-		z-index: 8;
-	}
-
-	nav.visible {
-		opacity: 1;
-		visibility: visible;
-		pointer-events: auto;
-	}
-
-	nav li {
-		margin-bottom: 20px;
-	}
-
-	nav li:last-child {
-		margin-bottom: 0;
-	}
-
-	nav a {
-		display: block;
-		text-align: left;
-		color: var(--text-color);
-		font-size: 1.4rem;
-		text-decoration: none;
-		letter-spacing: .05em;
-	}
-
-	nav a:hover,
-	nav a:focus-visible {
-		text-decoration: underline;
-	}
-
-	nav ul.nav_link {
-		border-top: 1px solid var(--border-color);
-		padding-top: 20px;
-		margin-top: 20px;
-	}
-
-	/* nav ul.nav_link a {
-		color: var(--link-color);
-	} */
 }
